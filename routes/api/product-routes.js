@@ -115,7 +115,7 @@ router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
     where: {
-      isbn: req.params.isbn,
+      id: req.params.id,
     },
   })
     .then((deletedProduct) => {
